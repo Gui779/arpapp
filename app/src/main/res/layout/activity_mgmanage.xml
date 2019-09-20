@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MgmanageActivity">
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.design.widget.TabLayout
+        android:background="@color/white"
+        app:tabIndicatorColor="#45A7F6"
+        app:tabSelectedTextColor="#45A7F6"
+        android:id="@+id/pawn_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pawn_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

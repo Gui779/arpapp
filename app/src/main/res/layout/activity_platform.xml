@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.PlatformActivity">
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_below="@+id/tbv_titlebar"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@+id/iv"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/textsize18"
+        android:layout_centerHorizontal="true"
+        android:text="红木产业数据金融云平台"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_below="@+id/name"
+        android:text="版本号1.0"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/shangwu"
+        android:layout_below="@+id/code"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input="13524655896"
+        app:content_show="true"
+        app:name="商务合作"/>
+
+    <com.example.erpqpp.myview.Item
+    android:id="@+id/gongzhonghao"
+    android:layout_below="@+id/shangwu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:arrow_show="false"
+    app:content_color="@color/text_black"
+    app:content_input="anjiafinance"
+    app:content_show="true"
+    app:name="微信公众号"/>
+
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/youxiang"
+        android:layout_below="@+id/gongzhonghao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input="baishoutouzi@163.com"
+        app:content_show="true"
+        app:name="客服邮箱"/>
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lidao"
+        android:text="《力道金融用户协议》"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/sp_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+       <TextView
+           android:id="@+id/lidao"
+           android:layout_centerHorizontal="true"
+           android:text="力道金融"
+           android:layout_marginBottom="20dp"
+           android:textSize="@dimen/sp_14"
+           android:layout_alignParentBottom="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+</RelativeLayout>

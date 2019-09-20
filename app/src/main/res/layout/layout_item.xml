@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item_container"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/line_1"
+    android:background="@drawable/select_press_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/textsize14"
+        tools:text="夫妻双方身份证" />
+
+    <EditText
+        android:id="@+id/et_item_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:maxLines="1"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/text_gray"
+        android:textSize="@dimen/textsize13"
+        tools:hint="请输入经营主题名称"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="right"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/textsize13"
+        tools:text="安家至诚管理有限公司"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_item_arrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableRight="@mipmap/arrow_right"
+        android:drawablePadding="@dimen/margin5"
+        android:gravity="right"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/textsize13"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded"
+        tools:text="去上传" />
+
+</LinearLayout>

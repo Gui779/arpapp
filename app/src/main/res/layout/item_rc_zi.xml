@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#ffff"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        >
+
+
+        <TableRow >
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.2dp"
+                android:background="#E4E4E4"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="单件名称 " />
+
+
+            <TextView
+                android:id="@+id/dname"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                 />
+
+
+            <TextView
+                android:background="#E4E4E4"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:gravity="center"
+                android:text="单件数量" />
+
+
+            <TextView
+                android:id="@+id/count"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+               />
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>

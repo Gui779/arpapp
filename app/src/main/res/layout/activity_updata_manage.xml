@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UpdataManageActivity">
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/bianhao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:input_show="true"
+        app:content_color="@color/text_black"
+        app:input_hint="请输入色号编号"
+        app:name="色号编号"/>
+
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/add_biaojia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:input_show="true"
+        app:content_color="@color/text_black"
+        app:input_hint="请输入色号名称"
+        app:name="色号名称"/>
+
+
+
+</LinearLayout>

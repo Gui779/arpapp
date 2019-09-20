@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_margin="2dp"
+            >
+
+
+            <TableRow >
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.2dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="产品名称" />
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:text="沙发" />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="产品系列" />
+
+
+                <TextView
+                    android:id="@+id/xilie"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:text="5000" />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="折扣率" />
+
+
+                <TextView
+                    android:id="@+id/zhekoulv"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="单件" />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="单价" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="系列1" />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="@color/biaoge"
+                    android:text="色号" />
+
+
+                <TextView
+                    android:id="@+id/color"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:text="绿色" />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="材质" />
+                <TextView
+                    android:id="@+id/caizhi"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:text="系列" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="类型" />
+
+
+                <TextView
+                    android:id="@+id/leixing"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="104545232.56" />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="@color/biaoge"
+                    android:text="数量" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="3" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

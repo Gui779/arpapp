@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_margin="2dp"
+            >
+
+
+            <TableRow >
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.2dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="产品名称" />
+
+
+                <TextView
+                    android:id="@+id/chanpin_name"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:text="" />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="@color/biaoge"
+                    android:text="数量" />
+
+                <TextView
+                    android:id="@+id/shuliang"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="" />
+
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="材质" />
+
+
+                <TextView
+                    android:id="@+id/caizhi"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="" />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="色号" />
+
+                <TextView
+                    android:id="@+id/sehao"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="" />
+
+
+            </TableRow>
+
+
+
+
+            <TableRow android:visibility="gone">
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="总额" />
+
+
+                <TextView
+                    android:id="@+id/jine"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:text="" />
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="单价" />
+
+
+                <TextView
+                    android:id="@+id/dprice"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    android:text="" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

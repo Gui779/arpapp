@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.AddorderActivity">
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+       <android.support.v4.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:text="客户信息"
+                   android:textColor="@color/black"
+                   android:padding="8dp"
+                   android:background="#EEEEEE"
+                   android:textSize="@dimen/textsize18"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/add_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:content_input="请输入客户名称"
+                   app:content_show="true"
+                   app:name="客户名称"/>
+
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/order_date"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:content_input="请选择订单日期"
+                   app:content_show="true"
+                   app:name="订单日期"/>
+
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/fukaun"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:content_input="预付款"
+                   app:content_show="true"
+                   app:name="付款方式"/>
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/price"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:input_hint="请输入预付款金额"
+                   app:input_show="true"
+                   app:input_type="number"
+                   app:name="预付款" />
+
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/xiaoshou"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:content_input="请选择销售人员"
+                   app:content_show="true"
+                   app:name="销售"/>
+
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/mendain"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:content_input="请选择门店"
+                   app:content_show="true"
+                   app:name="门店"/>
+
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/delivery_date"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:content_input="请选择交货日期"
+                   app:content_show="true"
+                   app:name="交货日期"/>
+
+               <com.example.erpqpp.myview.Item
+                   android:visibility="gone"
+                   android:id="@+id/order_id"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:content_color="@color/text_black"
+                   app:input_hint="请输入订单编号"
+                   app:input_show="true"
+                   app:input_type="number"
+                   app:name="订单编号" />
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/addres"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:input_show="true"
+                   app:content_color="@color/text_black"
+                   app:input_hint="请输入收货地址"
+                   app:name="收货地址"/>
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/tel"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:input_show="true"
+                   app:content_color="@color/text_black"
+                   app:input_hint="请输入联系方式"
+                   app:input_type="number"
+                   app:name="联系方式"/>
+
+
+               <com.example.erpqpp.myview.Item
+               android:id="@+id/peijian"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:arrow_show="false"
+               app:input_show="true"
+               app:content_color="@color/text_black"
+               app:input_hint="请输入配件"
+               app:name="配件"/>
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/zuofa"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:input_show="true"
+                   app:content_color="@color/text_black"
+                   app:input_hint="请输入做法"
+                   app:name="做法"/>
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/remark"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="false"
+                   app:input_show="true"
+                   app:content_color="@color/text_black"
+                   app:input_hint="请输入备注"
+                   app:name="备注"/>
+
+
+               <TextView
+                   android:text="订单信息"
+                   android:textColor="@color/black"
+                   android:padding="8dp"
+                   android:background="#EEEEEE"
+                   android:textSize="@dimen/textsize18"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+
+               <com.example.erpqpp.myview.Item
+                   android:id="@+id/item1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:arrow_show="true"
+                   app:content_color="@color/text_black"
+                   app:content_show="false"
+                   app:name="订单信息"/>
+
+           </LinearLayout>
+
+       </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

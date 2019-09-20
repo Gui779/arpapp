@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/paddingStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+   >
+
+    <EditText
+        android:id="@+id/et_search_content"
+        style="@style/paddingStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_search_bg"
+        android:drawableLeft="@mipmap/search_1"
+        android:drawablePadding="@dimen/margin10"
+        android:hint="产品名称搜索"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColor="#FF030303"
+        android:textSize="@dimen/textsize14"
+        tools:ignore="HardcodedText,LabelFor,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/iv_search_delete"
+        style="@style/paddingStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/delete"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+     <RelativeLayout
+         android:id="@+id/ordet_rl"
+         android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/order_iv"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ddmsg"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/order_tv"
+        android:layout_toRightOf="@+id/order_iv"
+        android:text="订单消息"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:textSize="@dimen/textsize18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
+
+    <View
+        android:visibility="gone"
+        android:background="@color/tv_topright"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/jidi_rl"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/jidi_iv"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/findpress"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/jidi_tv"
+            android:layout_toRightOf="@+id/jidi_iv"
+            android:text="生产基地"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/textsize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+</LinearLayout>

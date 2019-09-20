@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.SetLxActivity">
+
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+       <TextView
+           android:id="@+id/chengpin"
+           android:padding="10dp"
+           android:gravity="center"
+           android:text="成品"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tv_topright"/>
+       <TextView
+           android:id="@+id/mgbcp"
+           android:padding="10dp"
+           android:gravity="center"
+           android:text="木工半成品"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tv_topright"/>
+       <TextView
+           android:id="@+id/dmbcp"
+           android:padding="10dp"
+           android:gravity="center"
+           android:text="打磨半成品"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tv_topright"/>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.AddglproductActivity">
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <com.example.erpqpp.myview.Item
+                android:id="@+id/add_name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arrow_show="false"
+                app:input_show="true"
+                app:content_color="@color/text_black"
+                app:input_hint="请输入产品名称"
+                app:name="产品名称"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tv_topright"/>
+
+            <com.example.erpqpp.myview.Item
+                android:id="@+id/add_xilie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arrow_show="false"
+                app:input_show="true"
+                app:content_color="@color/text_black"
+                app:input_hint="请输入产品系列"
+                app:name="产品系列"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tv_topright"/>
+
+
+
+
+            <com.example.erpqpp.myview.Item
+                android:id="@+id/add_caizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arrow_show="false"
+                app:content_color="@color/text_black"
+                app:content_input="请选择产品材质"
+                app:content_show="true"
+                app:name="产品材质"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tv_topright"/>
+
+            <com.example.erpqpp.myview.Item
+                android:id="@+id/add_biaojia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arrow_show="false"
+                app:input_show="true"
+                app:content_color="@color/text_black"
+                app:input_hint="请输入标价"
+                app:input_type="number"
+                app:name="标价"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/tv_topright"/>
+
+            <com.example.erpqpp.myview.Item
+                android:id="@+id/add_chengbenjia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arrow_show="false"
+                app:input_show="true"
+                app:content_color="@color/text_black"
+                app:input_hint="请输入成本价"
+                app:input_type="number"
+                app:name="成本价"/>
+
+            <TextView
+                android:padding="10dp"
+                android:text="产品单位"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.erpqpp.myview.Item
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:arrow_show="false"
+                app:content_color="@color/text_black"
+                app:content_input="比例"
+                app:content_show="true"
+                app:name="单件"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/addcgproduct_rc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/add_img"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/add_1" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

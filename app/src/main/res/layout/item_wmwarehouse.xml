@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/check_bg"
+            android:button="@null"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="33dp"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_toRightOf="@+id/cb"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/delect"
+                android:text="删除"
+                android:padding="8dp"
+                android:textColor="@color/red"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/rl"
+            android:layout_toRightOf="@+id/cb"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/order_stat"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_margin="2dp"
+            >
+
+
+            <TableRow >
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.2dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="工厂名称" />
+
+
+                <TextView
+                    android:id="@+id/chanpin_name"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="材质" />
+
+
+                <TextView
+                    android:id="@+id/caizhi"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="单位" />
+
+
+                <TextView
+                    android:id="@+id/danwen"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="状态" />
+
+                <TextView
+                    android:id="@+id/zhuangtai"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="@color/biaoge"
+                    android:text="来源" />
+
+
+                <TextView
+                    android:id="@+id/laiyuan"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="仓库数量" />
+                <TextView
+                    android:id="@+id/ckcount"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:id="@+id/tvcount"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="@color/biaoge"
+                    android:text="收货/退回数量" />
+
+
+                <TextView
+                    android:id="@+id/shthcount"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    android:text="时间" />
+                <TextView
+                    android:id="@+id/mgdate"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:gravity="center"
+                    android:background="@color/biaoge"
+                    android:text="成本价" />
+
+
+                <TextView
+                    android:id="@+id/cbprice"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="@color/biaoge"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:background="#ffffffff"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

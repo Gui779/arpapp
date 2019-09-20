@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/kehu_name"
+             android:text="客户名称:你猜"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+           <ImageView
+               android:visibility="gone"
+               android:src="@mipmap/arrow_right"
+               android:layout_marginRight="8dp"
+               android:layout_alignParentRight="true"
+               android:layout_width="30dp"
+               android:layout_height="30dp" />
+
+
+     </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/marke"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:text="日期: 2019-04-15"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/xiaoshouyuan"
+            android:text="5500"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/tv_topright"/>
+
+
+</LinearLayout>

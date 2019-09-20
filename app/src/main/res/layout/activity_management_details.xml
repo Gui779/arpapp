@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ManagementDetailsActivity">
+
+
+    <com.example.erpqpp.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input=""
+        app:content_show="true"
+        app:name="客户名称"/>
+
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input=""
+        app:content_show="true"
+        app:name="客户编号"/>
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input=""
+        app:content_show="true"
+        app:name="身份证号"/>
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input=""
+        app:content_show="true"
+        app:name="生日"/>
+
+    <com.example.erpqpp.myview.Item
+    android:visibility="gone"
+    android:id="@+id/date"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:arrow_show="false"
+    app:content_color="@color/text_black"
+    app:content_input=""
+    app:content_show="true"
+    app:name="出生日期"/>
+
+
+    <com.example.erpqpp.myview.Item
+    android:id="@+id/tel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:arrow_show="false"
+    app:content_color="@color/text_black"
+    app:content_input=""
+    app:content_show="true"
+    app:name="手机号"/>
+
+
+    <com.example.erpqpp.myview.Item
+    android:id="@+id/addres"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:arrow_show="false"
+    app:content_color="@color/text_black"
+    app:content_input=""
+    app:content_show="true"
+    app:name="联系地址"/>
+
+    <com.example.erpqpp.myview.Item
+    android:id="@+id/tel_bei"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:arrow_show="false"
+    app:content_color="@color/text_black"
+    app:content_input=""
+    app:content_show="true"
+    app:name="手机号(备注)"/>
+
+    <com.example.erpqpp.myview.Item
+    android:id="@+id/region"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:arrow_show="false"
+    app:content_color="@color/text_black"
+    app:content_input=""
+    app:content_show="true"
+    app:name="所在地区"/>
+
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/mendain_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input=""
+        app:content_show="true"
+        app:name="门店成立时间"/>
+
+    <com.example.erpqpp.myview.Item
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arrow_show="false"
+        app:content_color="@color/text_black"
+        app:content_input=""
+        app:content_show="true"
+        app:name="类型"/>
+
+    <TextView
+        android:text="备注"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_black"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"/>
+
+
+      <TextView
+          android:id="@+id/beizhu"
+          android:paddingLeft="12dp"
+          android:text=""
+          android:textColor="#000"
+          android:background="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center_vertical"/>
+
+
+
+</LinearLayout>

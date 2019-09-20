@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.erpqpp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".Myapp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <!--修改材质-->
+        <activity android:name=".ui.UpManageActivity"/>
+        <!-- 修改色号 -->
+        <activity android:name=".ui.UpdataManageActivity" /> <!-- 发货记录 -->
+        <activity android:name=".ui.FhjlActivity" /> <!-- 设置仓管退换货数量 -->
+        <activity android:name=".ui.SetCgThActivity" /> <!-- 仓库收货 -->
+        <activity android:name=".ui.CkShListActivity" /> <!-- 仓库列表 -->
+        <activity android:name=".ui.CkListActivity" /> <!-- 选择销售色号 -->
+        <activity android:name=".ui.SelectShActivity" /> <!-- 设置类型 -->
+        <activity android:name=".ui.SetLxActivity" /> <!-- 设置折扣率 -->
+        <activity android:name=".ui.SetzKvActivity" /> <!-- 设置销售数量   价格 -->
+        <activity android:name=".ui.SetXsCountActivity" /> <!-- 选择销售单件 -->
+        <activity android:name=".ui.SelectXsDjActivity" /> <!-- 销售产品列表 -->
+        <activity android:name=".ui.XsproductListActivity" /> <!-- 添加销售产品 -->
+        <activity android:name=".ui.XsAddproductActivity" /> <!-- 选择客户名称 -->
+        <activity android:name=".ui.SelectNameActivity" /> <!-- 获取产品材质 -->
+        <activity android:name=".ui.SelectCpCzActivity" /> <!-- 获取材质 -->
+        <activity android:name=".ui.GetCzActivity" /> <!-- 套件选择 -->
+        <activity android:name=".ui.TjselectActivity" /> <!-- 选择仓库 -->
+        <activity android:name=".ui.SelectCkActivity" />
+        <activity android:name=".ui.AddYqproductActivity" />
+        <activity android:name=".ui.SelectYqActivity" /> <!-- 修改成本价 -->
+        <activity android:name=".ui.UpdataPriceActivity" /> <!-- 选择上漆管理 -->
+        <activity android:name=".ui.SelectSqProductActivity" /> <!-- 选择颜色 -->
+        <activity android:name=".ui.SelectColorActivity" /> <!-- 选择打磨产品 -->
+        <activity android:name=".ui.SelectDmProductActivity" /> <!-- 单件选择 -->
+        <activity android:name=".ui.SingletonActivity" /> <!-- 设置单件数量 -->
+        <activity android:name=".ui.SingletonCountActivity" /> <!-- 设置退换货数量 -->
+        <activity android:name=".ui.SetCountActivity" />
+        <activity android:name=".ui.WarehouseStatisticsActivity" /> <!-- 调货  发货 -->
+        <activity android:name=".ui.FallActivity" /> <!-- 收货 -->
+        <activity android:name=".ui.HarvestActivity" /> <!-- 新增管理产品 -->
+        <activity android:name=".ui.AddglproductActivity" /> <!-- 添加产品 -->
+        <activity android:name=".ui.AddActivity" /> <!-- 成品仓库 -->
+        <activity android:name=".ui.CpWarehouseActivity" /> <!-- 已油漆仓库 -->
+        <activity android:name=".ui.YyqWarehouseActivity" /> <!-- 已磨仓库 -->
+        <activity android:name=".ui.YmWarehouseActivity" /> <!-- 未磨仓库 -->
+        <activity android:name=".ui.WmWarehouseActivity" /> <!-- 上漆管理 -->
+        <activity android:name=".ui.SqmanageActivity" /> <!-- 打磨管理 -->
+        <activity android:name=".ui.DmmanageActivity" /> <!-- 木工管理 -->
+        <activity android:name=".ui.MgmanageActivity" /> <!-- 仓管列表 -->
+        <activity android:name=".ui.WarehouseActivity" /> <!-- 库存统计 -->
+        <activity android:name=".ui.StatisticsActivity" /> <!-- 折扣列表 -->
+        <activity android:name=".ui.DiscountActivity" /> <!-- 材质管理 -->
+        <activity android:name=".ui.TextureManageActivity" /> <!-- 色号管理 -->
+        <activity android:name=".ui.ColourManageActivity" /> <!-- 编辑产品 -->
+        <activity android:name=".ui.CompileproductActivity" /> <!-- 设置产品 -->
+        <activity android:name=".ui.SetProductActivity" /> <!-- 添加仓管产品 -->
+        <activity android:name=".ui.AddCgProductActivity" /> <!-- 产品管理 -->
+        <activity android:name=".ui.ProductActivity" /> <!-- 仓管 -->
+        <activity android:name=".ui.StorehouseActivity" />
+        <activity android:name=".ui.MainActivity" /> <!-- 订单消息 -->
+        <activity android:name=".ui.OrderMsgActivity" /> <!-- 个人主页 -->
+        <activity android:name=".ui.PersonageActivity" /> <!-- 意见反馈 -->
+        <activity android:name=".ui.FeedbackActivity" /> <!-- 关于平台 -->
+        <activity android:name=".ui.PlatformActivity" /> <!-- 发货详情 -->
+        <activity android:name=".ui.SendGoodsDetailsActivity" /> <!-- 发货 -->
+        <activity android:name=".ui.SendGoodsActivity" /> <!-- 销售统计 -->
+        <activity android:name=".ui.MarkettjActivity" /> <!-- 选择木工产品 -->
+        <activity android:name=".ui.SelectProductActivity" /> <!-- 添加产品 -->
+        <activity android:name=".ui.AddproductActivity" /> <!-- 添加订单 -->
+        <activity android:name=".ui.AddorderActivity" /> <!-- 销售统计 详情 -->
+        <activity android:name=".ui.MarkettjDetailsActivity" /> <!-- 添加客户 -->
+        <activity android:name=".ui.AddclientActivity" /> <!-- 客户管理详情 -->
+        <activity android:name=".ui.ManagementDetailsActivity" /> <!-- 客户管理 -->
+        <activity android:name=".ui.ManagementActivity" />
+
+        <meta-data
+            android:name="3e7739b9bd"
+            android:value="APP_ID" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+
+        <activity android:name=".ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.erpqpp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>
